@@ -48,4 +48,20 @@ function App() {
   );
 }
 
-export default App;
+export default function App() {
+  return (
+    <html lang="en">
+      <body>
+        <CopilotKit publicApiKey="ck_pub_e59434d09550fac8e377e043efb5d3bd">
+          <CopilotSidebar
+            labels={{
+              title: "Sidebar Assistant",
+              initial: "How can I help you today?"
+            }}
+            instructions="Your product deserves an AI sidekick"
+          />
+        </CopilotKit>
+      </body>
+    </html>
+  );
+}
