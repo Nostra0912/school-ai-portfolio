@@ -20,6 +20,8 @@
  */
 
 import React, { useState } from 'react';
+import { CopilotKit } from "@copilotkit/react-core"; 
+import "@copilotkit/react-ui/styles.css";
 import { Link, useLocation } from 'react-router-dom';
 import { 
   LayoutGrid, 
@@ -258,4 +260,15 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   );
 };
 
-export default Layout;
+export default function RootLayout({ children }: { children: ReactNode }) {
+  return (
+    <html lang="en">
+      <body>
+        {/* Use the public api key you got from Copilot Cloud  */}
+        <CopilotKit publicApiKey="<your-copilot-cloud-public-api-key>"> 
+          {children}
+        </CopilotKit>
+      </body>
+    </html>
+  );
+}
