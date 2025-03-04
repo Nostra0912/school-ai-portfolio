@@ -1,0 +1,289 @@
+For all pages and logic  I ask you to make, have them be beautiful, not cookie cutter. Implement all buttons and functions during page creation Make all pages and components  that are fully featured and worthy for production.
+
+USE React MUI, install all needed npm packages for features and components which improve development
+
+
+Use stock photos from unsplash , only valid URLs you know exist. Do not download the images, only link to them in image tags.
+
+**Product Requirements Document (PRD)**
+
+**School Portfolio Management Tool**
+
+---
+
+### **1. Introduction**
+The School Portfolio Management Tool is designed to streamline the management and oversight of schools within an educational network. The tool aims to support administrators, district leaders, and other stakeholders by centralizing data, automating workflows, and enhancing visibility into school operations, compliance, performance metrics, and governance.
+
+---
+
+### **2. Objectives**
+- **Centralized Data Management**: Provide a single platform to manage data related to schools, including compliance, performance, and governance.
+- **Enhanced Collaboration**: Allow stakeholders to collaborate efficiently using shared access to tools and data.
+- **Automated Workflows**: Streamline repetitive tasks like compliance reporting, meeting scheduling, and application reviews.
+- **Customizable Reporting**: Enable stakeholders to generate tailored reports for oversight and decision-making.
+- **Regulatory Compliance**: Ensure adherence to state and federal regulations across all managed schools.
+
+---
+
+### **3. Core Features**
+
+#### **3.1 School Directory Management**
+- **Interactive Directory Viewer**:
+  - Searchable and browsable directory of all schools.
+  - Filters by:
+    - School type (e.g., public, private, charter).
+    - Operational status (e.g., active, inactive, under review).
+    - Grade levels served (e.g., elementary, middle, high school).
+    - Location (e.g., city, state, region).
+    - School performance metrics (e.g., attendance rates, test scores).
+  - View detailed profiles of each school, including:
+    - School name and address.
+    - Leadership details (e.g., principal, board members).
+    - Compliance status.
+    - Enrollment numbers and demographics.
+    - Key contacts.
+- **Data Management**:
+  - Add, update, or archive school records.
+  - Integrate with Anvilar’s Directory Connect for organization charts and personnel links.
+- **Interactive Directory Viewer**:
+  - Searchable and browsable directory of all schools.
+  - Filters by school type, operational status, and grade levels.
+  - View detailed profiles of each school, including location, leadership, and compliance status.
+- **Data Management**:
+  - Add, update, or archive school records.
+  - Integrate with Anvilar’s Directory Connect for organization charts and personnel links.
+
+#### **3.2 Compliance Oversight**
+- **Compliance Task Management**:
+  - Assign, track, and report on compliance tasks.
+  - Automated reminders for deadlines.
+- **Compliance Dashboard**:
+  - Real-time status of compliance across schools, including a color-coded indicator (e.g., green for compliant, yellow for pending, red for overdue).
+  - Overdue tasks are prominently displayed at the top with details such as school name, task description, and due date.
+  - Metrics include task completion rates, average completion time, and the number of overdue tasks per school.
+  - Interactive graphs and charts to visualize compliance trends over time.
+- **Compliance Task Management**:
+  - Assign, track, and report on compliance tasks.
+  - Automated reminders for deadlines.
+- **Compliance Dashboard**:
+  - Real-time status of compliance across schools.
+  - Key metrics and overdue tasks highlighted.
+
+#### **3.3 Governance Management**
+- **Board Member Directory**:
+  - Manage board member profiles, terms, and roles.
+  - Integration with Governance modules for meeting minutes and KPIs.
+- **Meeting Scheduler**:
+  - Schedule, manage, and publish meeting agendas.
+  - Track attendance and minutes.
+
+#### **3.4 Performance Tracking**
+- **KPIs Dashboard**:
+  - Display academic, operational, and financial performance metrics.
+  - Key metrics include attendance rates, standardized test scores, budget utilization, and staff-to-student ratios.
+  - Comparative analysis across schools visualized through:
+    - Bar graphs for school-by-school performance comparisons.
+    - Heatmaps to identify schools excelling or struggling in specific KPIs.
+    - Time-series charts to show trends over the academic year.
+- **Customizable Reports**:
+  - Generate reports for stakeholders based on selected parameters, such as school type, geographic region, or performance categories.
+  - Export options include PDF, Excel, and CSV formats for broader accessibility and sharing.
+- **KPIs Dashboard**:
+  - Display academic, operational, and financial performance metrics.
+  - Compare performance across schools.
+- **Customizable Reports**:
+  - Generate reports for stakeholders based on selected parameters.
+
+#### **3.5 Document and File Management**
+- **Integration with Anvilar Storage Zone**:
+  - Upload and manage school-specific documents.
+  - Role-based access controls for sensitive files.
+
+#### **3.6 Calendar Management**
+- **Integrated Calendar**:
+  - View and manage important dates for each school.
+  - Include compliance deadlines, governance meetings, and events.
+  - Supports importing external events from tools such as Google Calendar and Outlook.
+  - Sync calendars across Anvilar modules for seamless scheduling.
+  - Notifications for upcoming deadlines and events.
+- **Integrated Calendar**:
+  - View and manage important dates for each school.
+  - Include compliance deadlines, governance meetings, and events.
+
+#### **3.7 Escalation Ladder and Intervention Workflow**
+- **Escalation Ladder**:
+  - Monitor and manage school health status across levels (e.g., Informal Contact, Improvement Plans, Notices of Concern).
+  - Allow escalation or de-escalation based on events such as site visits, complaints, or governance issues.
+- **Stakeholder Involvement**:
+  - Notify relevant stakeholders (e.g., legal departments, school boards) automatically via email or in-app notifications during escalation or de-escalation events.
+  - Notifications include detailed information about the level change, reasons for the change, and any required actions.
+- **Documentation of Events**:
+  - Each escalation or de-escalation event is logged with metadata such as the date, time, initiating user, and detailed notes on the cause of the level change.
+  - Attachments such as reports or meeting minutes can be added to event records for context.
+  - A visual timeline of events is provided to show the history of escalation and intervention for each school.
+- **Escalation Ladder**:
+  - Monitor and manage school health status across levels (e.g., Informal Contact, Improvement Plans, Notices of Concern).
+  - Allow escalation or de-escalation based on events such as site visits, complaints, or governance issues.
+- **Stakeholder Involvement**:
+  - Notify relevant stakeholders (e.g., legal departments, school boards) at appropriate levels of escalation.
+  - Track and document interventions.
+
+#### **3.8 User Roles and Permissions**
+- **Role-Based Access Control**:
+  - Define roles such as Administrator, Compliance Officer, Viewer, and Escalation Stakeholder.
+  - Restrict access based on roles and permissions.
+
+---
+
+### **4. Target Audience**
+- **Primary Users**:
+  - School Administrators
+  - District Officials
+  - Charter Management Organizations (CMOs)
+- **Secondary Users**:
+  - Parents
+  - Board Members
+  - Educators
+
+---
+
+### **5. Functional Requirements**
+
+#### **5.1 Usability**
+- Intuitive interface for school administrators and district officials.
+- Support for mobile and desktop devices.
+
+#### **5.2 Integration**
+- Integration with existing Anvilar modules like Governance, Directory Connect, Compliance Oversight, and Calendar Management.
+- API support for external systems.
+
+#### **5.3 Reporting and Analytics**
+- Real-time analytics dashboard.
+- Exportable reports in multiple formats (PDF, Excel, CSV).
+
+#### **5.4 Security**
+- Data encryption for sensitive information.
+- Role-based permissions and access controls.
+- Audit trails for all user actions.
+
+#### **5.5 Notifications**
+- Automated email and in-app notifications for tasks, deadlines, and updates.
+- Customizable notification settings.
+
+#### **5.6 Escalation Ladder**
+- **Levels**:
+  - Level 0: Informal Contact - Normal day-to-day communications.
+  - Level 1: Initial Contact - Documented significant concern.
+  - Level 2: Improvement Plan - Issues requiring support or training.
+  - Level 3: Notice of Concern - Statutory violations or negative governance indicators.
+  - Level 4: Revocation/Non-Renewal - Severe contract violations.
+- **Event-Driven Workflow**:
+  - Track escalations and de-escalations with documented events.
+
+---
+
+### **6. Non-Functional Requirements**
+
+#### **6.1 Performance**
+- Support for 100+ concurrent users per school.
+- Minimal latency for data access and reporting.
+
+#### **6.2 Scalability**
+- Expandable to manage up to 500 schools.
+- Flexible architecture to support additional modules.
+
+#### **6.3 Compliance**
+- Adherence to FERPA, GDPR, and other relevant regulations.
+
+---
+
+### **7. Data Model**
+
+#### **Key Entities**:
+- School Profile
+- Compliance Tasks
+- Governance Records
+- Performance Metrics
+- Calendars and Events
+- Escalation Events
+
+---
+
+### **8. User Interface (UI) Design**
+- **Dashboard**:
+  - The dashboard serves as the central hub for quick insights and navigation.
+  - Widgets display real-time updates for compliance status, performance metrics, and upcoming deadlines.
+  - Design includes a card-based layout with key data summaries like "Top Performing Schools," "Critical Compliance Alerts," and "Recent Escalations."
+  - Interactive components like dropdown filters (by school type, region, or status) and a search bar for quick access to specific schools.
+- **School Profiles**:
+  - A tabbed interface with sections for Compliance, Governance, Performance, and Key Contacts.
+  - Each tab features an interactive table or chart summarizing relevant data.
+  - Data Pods group detailed attributes like Profile Attributes, Key Personnel, and Compliance Data.
+  - Users can upload/download documents, update school information, or tag schools for follow-ups.
+- **Calendar View**:
+  - A unified calendar displaying compliance deadlines, governance meetings, and special events.
+  - Calendar supports day, week, and month views, with color-coded events by type.
+  - Integration with external tools like Google Calendar and Outlook for syncing events.
+- **Escalation Ladder View**:
+  - A dynamic visual display showing each school’s current level of intervention.
+  - Allows users to click on any level to view detailed escalation history, notes, and actions taken.
+  - Includes a timeline of events and stakeholders involved, with the ability to upload supporting documents or notes for each step.
+- **Dashboard**:
+  - Overview of key metrics (compliance, performance, governance).
+- **School Profiles**:
+  - Detailed pages for each school with tabs for compliance, governance, and performance.
+  - Include "Data Pods" for storing data categories such as Profile Attributes, Key Personnel, and Compliance Data.
+- **Calendar View**:
+  - Unified calendar for all events and deadlines.
+- **Escalation Ladder View**:
+  - Visual representation of the school’s current status.
+
+---
+
+### **9. Milestones and Timeline**
+
+#### **Phase 1: MVP (3 Months)**
+- School directory and basic compliance task management.
+- Governance management (board member directory and meeting scheduler).
+
+#### **Phase 2: Advanced Features (6 Months)**
+- Performance tracking and reporting.
+- Calendar integration and notifications.
+- Full implementation of the Escalation Ladder.
+
+#### **Phase 3: Full Integration (12 Months)**
+- API integrations with external systems.
+- Advanced analytics and AI-based insights.
+
+---
+
+### **10. Key Performance Indicators (KPIs)**
+- **User Adoption**:
+  - Number of active users within 3 months of launch.
+- **Task Completion Rate**:
+  - Percentage of compliance tasks completed on time.
+- **Engagement**:
+  - Frequency of tool usage by administrators and district officials.
+
+---
+
+### **11. Risks and Mitigation**
+
+#### **Risk 1: Data Overload**
+- **Mitigation**: Implement advanced filters and customizable dashboards.
+
+#### **Risk 2: Adoption Resistance**
+- **Mitigation**: Offer comprehensive onboarding and training sessions.
+
+#### **Risk 3: Compliance Failures**
+- **Mitigation**: Provide automated reminders and detailed compliance templates.
+
+---
+
+### **12. Appendices**
+- **Integration Details**: Mapping with other Anvilar modules.
+- **Compliance Standards**: Key compliance frameworks supported.
+
+---
+
+This PRD outlines the comprehensive requirements and roadmap for the School Portfolio Management Tool. Feedback from stakeholders will be incorporated in iterative updates to ensure the tool meets user needs and regulatory standards effectively.
