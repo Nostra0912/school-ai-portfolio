@@ -265,7 +265,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="en">
       <body>
         {/* Use the public api key you got from Copilot Cloud  */}
-        <CopilotKit publicApiKey="<your-copilot-cloud-public-api-key>"> 
+        <CopilotKit publicApiKey="ck_pub_e59434d09550fac8e377e043efb5d3bd"> 
           {children}
         </CopilotKit>
       </body>
